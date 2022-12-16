@@ -365,9 +365,9 @@ MonoBehaviour:
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 512
   m_InteractionLayers:
-    m_Bits: 4294967295
+    m_Bits: 512
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
@@ -932,7 +932,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 919009183}
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 32
   m_InteractionLayers:
     m_Bits: 1024
   m_AttachTransform: {fileID: 0}
@@ -1353,7 +1353,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 919009183}
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 512
   m_InteractionLayers:
     m_Bits: 512
   m_AttachTransform: {fileID: 0}
@@ -2273,7 +2273,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 919009183}
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 512
   m_InteractionLayers:
     m_Bits: 512
   m_AttachTransform: {fileID: 0}
@@ -3691,7 +3691,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 919009183}
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 256
   m_InteractionLayers:
     m_Bits: 2147483648
   m_AttachTransform: {fileID: 0}
@@ -4258,7 +4258,7 @@ MonoBehaviour:
   - {fileID: 284505481701429370}
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 256
   m_InteractionLayers:
     m_Bits: 2147483648
   m_DistanceCalculationMode: 1

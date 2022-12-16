@@ -30,13 +30,13 @@ public class NetworkedGrabbing : MonoBehaviourPunCallbacks, IPunOwnershipCallbac
         {
             //Object is being grabbed
             rb.isKinematic = true;
-            //gameObject.layer = 11;
+            gameObject.layer = 11;
         }
         else
         {
             //Object is not being grabbed
             rb.isKinematic = false;
-            //gameObject.layer = 9;
+            gameObject.layer = 9;
 
         }
     }
@@ -53,7 +53,7 @@ public class NetworkedGrabbing : MonoBehaviourPunCallbacks, IPunOwnershipCallbac
 
         if (m_photonView.Owner == PhotonNetwork.LocalPlayer)
         {
-            Debug.Log("We do not request the owndership. Already mine.");
+            Debug.Log("We do not request the ownership. Already mine.");
         }
         else
         {
@@ -75,7 +75,7 @@ public class NetworkedGrabbing : MonoBehaviourPunCallbacks, IPunOwnershipCallbac
             return;
         }
 
-        Debug.Log("Ownership Requested for: " + targetView.name+ " from " + requestingPlayer.NickName);
+        Debug.Log("Ownership Requested for: " + targetView.name + " from " + requestingPlayer.NickName);
         m_photonView.TransferOwnership(requestingPlayer);
     }
 
@@ -96,6 +96,7 @@ public class NetworkedGrabbing : MonoBehaviourPunCallbacks, IPunOwnershipCallbac
         isBeingHeld = true;
     }
 
+    [PunRPC]
     public void StopNetworkGrabbing()
     {
         isBeingHeld = false; 

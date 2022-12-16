@@ -7,6 +7,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class PlayerNetworkSetup : MonoBehaviourPunCallbacks
 {
     public GameObject LocalXROrigin;
+    public GameObject MainAvatarGameObject;
 
     public GameObject AvatarHead;
     public GameObject AvatarBody;
@@ -42,6 +43,7 @@ public class PlayerNetworkSetup : MonoBehaviourPunCallbacks
                     item.teleportationProvider = LocalXROrigin.GetComponent<TeleportationProvider>();
                 }
             }
+            MainAvatarGameObject.AddComponent<AudioListener>();    
         }
         else
         {
